@@ -10,8 +10,8 @@ h2, h3, p{
   box-sizing: inherit;
 }
 #container{
-  width: 600px;
-  height: 450px;
+  width: auto;
+  height: auto;
   margin: 50px;
   box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.35);
   border-radius: 5px;
@@ -53,8 +53,8 @@ h2, h3, p{
 #about, #subscribe{
   vertical-align: top;
   display: inline-block;
-  height: 100%;
-  width: 50%;
+  height: auto;
+  width: 100%;
   padding: 20px;
 }
 
@@ -116,4 +116,18 @@ button:hover{
   list-style: none;
   opacity: 0.8;
   text-indent: 2;
+}
+
+@media (min-width: 660px) {
+
+  #container{
+    width: 600px;
+    height: 450px;
+  }
+
+  #about, #subscribe{
+    width: 50%;
+    height: 100%;
+  }
+  
 }
